@@ -8,3 +8,6 @@ Film <- read.csv("movies.csv")
 install.packages("asbio")  // The necessary package required to produce the pair plots is "asbio"  
 library(asbio)  
 pairs(~Box+Rate+User+Meta, data=Film, lower.panel = panel.lm, upper.panel = panel.cor.res)
+
+// I am unsure how to attach the plot to github, so I have created an issue with the plot attached. This plot confirms there is 
+collinearity between our variables as there is a high correlation coefficient that is very significant.
